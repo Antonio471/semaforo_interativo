@@ -1,6 +1,6 @@
 {
   "name": "Semaforo Interativo",
-  "author": "ChatGPT",
+  "author": "Antonio",
   "description": "Semáforo de Trânsito com botão de pedestre, LEDs e buzzer",
   "targets": [
     {
