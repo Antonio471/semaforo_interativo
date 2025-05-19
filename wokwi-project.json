@@ -1,0 +1,45 @@
+{
+  "name": "Semaforo Interativo",
+  "author": "ChatGPT",
+  "description": "Semáforo de Trânsito com botão de pedestre, LEDs e buzzer",
+  "targets": [
+    {
+      "type": "pico",
+      "firmware": "build/semaforo_interativo.uf2"
+    },
+    {
+      "type": "led",
+      "id": "led-vermelho",
+      "color": "red",
+      "attrs": { "label": "Vermelho" },
+      "pin": 13
+    },
+    {
+      "type": "led",
+      "id": "led-amarelo",
+      "color": "yellow",
+      "attrs": { "label": "Amarelo (Verde+Vermelho)" },
+      "pin": 13
+    },
+    {
+      "type": "led",
+      "id": "led-verde",
+      "color": "green",
+      "attrs": { "label": "Verde" },
+      "pin": 11
+    },
+    {
+      "type": "button",
+      "id": "botao-pedestre",
+      "attrs": { "label": "Pedestre" },
+      "pin": 15,
+      "pull": "up"
+    },
+    {
+      "type": "buzzer",
+      "id": "buzzer",
+      "attrs": { "label": "Buzzer" },
+      "pin": 14
+    }
+  ]
+}
